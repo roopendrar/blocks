@@ -1,0 +1,20 @@
+{%extends "app2/base.html" %}
+
+
+{% block title %}
+  <title>child.html</title>
+{% endblock  %}
+
+
+<!--{% block body_block %}
+  <center><h1><body>
+    welcome to child.html page
+</body></h1></center>
+{% endblock  %}-->
+
+{% block content %}
+ <center><h3>welcome to child.html</h3></center>
+ <center><a href="{% url 'app2:home' %}">home</a></center>
+ <center><a href="{% url 'sample' %}">sample</a></center>
+{% endblock  %}
+
